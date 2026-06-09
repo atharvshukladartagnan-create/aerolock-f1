@@ -20,9 +20,9 @@ st.sidebar.header("🏁 Select Team")
 team = st.sidebar.selectbox("Team", ["Mercedes W14 (2023)", "Red Bull RB19", "Ferrari SF-23", "Custom"])
 
 if team == "Mercedes W14 (2023)":
-    ride_height = 8
+    ride_height = 13
     downforce_coeff = 2.1
-    stiffness = 200
+    stiffness = 180
 elif team == "Red Bull RB19":
     ride_height = 12
     downforce_coeff = 1.9
