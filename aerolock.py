@@ -8,7 +8,7 @@ st.set_page_config(page_title="AEROLOCK — F1 Porpoising Simulator", layout="wi
 st.title("🏎️ AEROLOCK — F1 Porpoising Physics Simulator")
 st.markdown("### Real-time ground effect aerodynamic stall and porpoising simulator")
 st.divider()
-
+st.info("📋 Based on 2022-2023 FIA Technical Regulations — Ground Effect Era. Mercedes W14 porpoising data referenced from 2022 Bahrain GP and 2023 season telemetry reports.")
 st.sidebar.header("⚙️ Car Parameters")
 speed = st.sidebar.slider("Car Speed (km/h)", 100, 350, 250, 5)
 ride_height = st.sidebar.slider("Ride Height (mm)", 2, 30, 10, 1)
@@ -16,6 +16,7 @@ downforce_coeff = st.sidebar.slider("Downforce Coefficient", 0.5, 3.0, 1.8, 0.1)
 stiffness = st.sidebar.slider("Suspension Stiffness (N/mm)", 50, 300, 150, 10)
 
 st.sidebar.divider()
+st.info("📋 Based on 2022-2023 FIA Technical Regulations — Ground Effect Era. Mercedes W14 porpoising data referenced from 2022 Bahrain GP and 2023 season telemetry reports.")
 st.sidebar.header("🏁 Select Team")
 team = st.sidebar.selectbox("Team", ["Mercedes W14 (2023)", "Red Bull RB19", "Ferrari SF-23", "Custom"])
 
